@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Mangas</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/btn.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/forms.css" />
+</head>
+<body>
+
+<div id="loader" class="loader-container">
+    <div class="loader"></div>
+</div>
+
+<div class="navbar-container">
+    <div class="navbar">
+        <a href="#generos">Generos</a>
+        <a href="#autores">Autores</a>
+        <a href="#mangas">Mangas</a>
+    </div>
+</div>
+
+<div class="clearfix"></div>
+
+<section id="generos" class="section">
+    <h2>Generos</h2>
+    <div class="input-container">
+        <input type="number" id="genero-id" placeholder="ID do genero">
+        <input type="text" id="genero-nome" placeholder="Nome do genero">
+        <a id="genero-search" class="btn btn-search">Buscar</a>
+        <a id="genero-add" class="btn btn-add">Adicionar</a>
+        <a id="genero-remove" class="btn btn-remove">Remover</a>
+        <a id="genero-update" class="btn btn-update">Atualizar</a>
+    </div>
+    <div class="table-container">
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Criação</th>
+                <th>Nome</th>
+                <th>Mangas</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section id="autores" class="section">
+    <h2>Autores</h2>
+    <div class="input-container">
+        <input type="number" id="autor-id" placeholder="ID do autor">
+        <input type="text" id="autor-nome" placeholder="Nome do autor">
+        <a id="autor-search" class="btn btn-search">Buscar</a>
+        <a id="autor-add" class="btn btn-add">Adicionar</a>
+        <a id="autor-remove" class="btn btn-remove">Remover</a>
+        <a id="autor-update" class="btn btn-update">Atualizar</a>
+    </div>
+    <div class="table-container">
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Criação</th>
+                <th>Nome</th>
+                <th>Mangas</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section id="mangas" class="section">
+    <h2>Mangas</h2>
+
+    <div id="response"></div>
+</section>
+
+<script type="text/javascript" src="assets/js/functions.js"></script>
+<script type="text/javascript" src="assets/js/events.js"></script>
+
+<script>
+    buscaGeneros()
+    buscaAutores()
+    buscaMangas()
+</script>
+
+</body>
+</html>

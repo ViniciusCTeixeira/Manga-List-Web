@@ -1,0 +1,31 @@
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.select-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.select-container select {
+    width: 49%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+
+.input-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.input-container input {
+    width: 38%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
