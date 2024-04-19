@@ -299,6 +299,18 @@ function listMangas(itens) {
         mangaDetailsDiv.appendChild(p2);
         mangaDetailsDiv.appendChild(p3);
 
+        if(item.url.length > 0){
+            let a = document.createElement('a');
+            a.textContent = 'Visitar';
+            a.href = item.url
+            a.target = "_blank"
+            a.classList.add('btn')
+            item.authors.forEach(function (author){
+                p3.textContent = p3.textContent + author.name + ', '
+            })
+            mangaDetailsDiv.appendChild(a);
+        }
+
         mangaDiv.appendChild(mangaDetailsDiv);
         responseDiv.appendChild(mangaDiv);
     });
